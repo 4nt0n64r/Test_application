@@ -7,7 +7,11 @@ import moxy.InjectViewState
 @InjectViewState
 class ActivityPresenterImpl : AbstractActivityPresenter() {
 
-    override fun loadFragment(fragmentId: Int) {
-        viewState.showFragment(fragmentId)
+    override fun loadHomeFragment() {
+        viewState.showFragment(HOME_FRAGMENT)
+    }
+
+    override fun loadClassesFragment() {
+        viewState.showFragment(CLASSES_FRAGMENT)
     }
 }

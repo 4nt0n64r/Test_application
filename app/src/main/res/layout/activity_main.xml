@@ -1,23 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"
         android:id="@+id/frame"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/bnv_background"
         tools:context=".ui.MainActivity">
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-            android:id="@+id/navigation"
+    <androidx.cardview.widget.CardView
+            android:layout_gravity="bottom"
+            app:cardCornerRadius="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            >
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:id="@+id/navigation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:background="@color/bnv_background"
+                app:itemIconTint="@drawable/selector_for_bnv"
+                app:itemTextColor="@drawable/selector_for_bnv"
+                android:minHeight="50dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:menu="@menu/navigation" />
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+        android:layout_gravity="bottom"
             android:background="@color/bnv_background"
-            app:itemIconTint="@drawable/selector_for_bnv"
-            app:itemTextColor="@drawable/selector_for_bnv"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:menu="@menu/navigation" />
+            android:layout_height="21dp"/>
+
+
+
 
 </FrameLayout>

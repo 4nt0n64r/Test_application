@@ -9,7 +9,8 @@ import moxy.viewstate.strategy.StateStrategyType
 @StateStrategyType(SkipStrategy::class)
 interface ActivityPresenter {
 
-    fun loadFragment(fragmentId: Int)
+    fun loadHomeFragment()
+    fun loadClassesFragment()
 
     fun onDestroy()
 }

@@ -1,11 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#008577</color>
-    <color name="colorPrimaryDark">#00574B</color>
-    <color name="colorAccent">#D81B60</color>
-    <color name="bnv_background">24252a</color>
-    <color name="bnv_icon_checked">223636</color>
-    <color name="bnv_icon_color">e2e3e8</color>
+    <color name="colorPrimary">#1c1d21</color>
+    <color name="colorPrimaryDark">#1c1d21</color>
+    <color name="colorAccent">#1c1d21</color>
+
+    <color name="bnv_background">#232429</color>
+    <color name="bnv_icon_checked">#31d199</color>
+    <color name="bnv_icon_color">#e2e3e8</color>
+    <color name="fragment_background">#1c1d21</color>
+    <color name="gradient_start">#38f285</color>
+    <color name="gradient_finish">#03bdb7</color>
+    <color name="text_greeting_color">#FFFFFF</color>
+    <color name="clock_tint">#7FFFFFFF</color>
 
 
 </resources>

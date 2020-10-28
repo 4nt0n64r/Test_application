@@ -27,7 +27,7 @@ class MainActivity : MvpAppCompatActivity(), ActivityView {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        presenter.loadFragment(HOME_FRAGMENT)
+        presenter.loadHomeFragment()
 
     }
 
