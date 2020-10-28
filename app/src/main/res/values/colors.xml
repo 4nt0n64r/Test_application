@@ -3,4 +3,9 @@
     <color name="colorPrimary">#008577</color>
     <color name="colorPrimaryDark">#00574B</color>
     <color name="colorAccent">#D81B60</color>
+    <color name="bnv_background">24252a</color>
+    <color name="bnv_icon_checked">223636</color>
+    <color name="bnv_icon_color">e2e3e8</color>
+
+
 </resources>
