@@ -14,11 +14,12 @@ data class Homework(
     val name: String,
     val daysLeft: Int,
     val description: String
-): InterfaceForAdapter
+) : InterfaceForAdapter
 
 data class StudySubject(
     val name: String,
     val time: String,
     val description: String,
-    val teacher: String
-): InterfaceForAdapter
+    val teacher: String,
+    val skype: Boolean
+) : InterfaceForAdapter

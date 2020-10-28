@@ -12,6 +12,8 @@
     <color name="gradient_finish">#03bdb7</color>
     <color name="text_greeting_color">#FFFFFF</color>
     <color name="clock_tint">#7FFFFFFF</color>
+    <color name="classes_card_color">#24252a</color>
+    <color name="skype_text_color">#4acffd</color>
 
 
 </resources>

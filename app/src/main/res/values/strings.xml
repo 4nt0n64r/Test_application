@@ -10,4 +10,12 @@
     <string name="hi_mike">Hi, <b>Mike!</b></string>
     <string name="ready_for_exams">Are you ready for exams?</string>
 
+
+    <string name="classes">Classes</string>
+    <string name="homework">Homework</string>
+    <string name="hours">hours</string>
+    <string name="minutes">minutes</string>
+    <string name="days">days</string>
+
+    <string name="open_in">Open in</string>
 </resources>
