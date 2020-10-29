@@ -1,5 +1,7 @@
 package com.a4nt0n64r.testapp.di.modules
 
+import com.a4nt0n64r.testapp.data.RepositoryImpl
+import com.a4nt0n64r.testapp.domain.repository.Repository
 import com.a4nt0n64r.testapp.ui.ActivityPresenterImpl
 import com.a4nt0n64r.testapp.ui.base.AbstractActivityPresenter
 import com.a4nt0n64r.testapp.ui.base.AbstractClassesPresenter
@@ -11,17 +13,18 @@ import org.koin.dsl.module
 
 val applicationModules = module(override = true) {
 
-    //    presenters
     factory<AbstractActivityPresenter> {
         ActivityPresenterImpl()
     }
 
     factory<AbstractHomePresenter> {
-        HomePresenterImpl()
+        HomePresenterImpl(get())
     }
 
     factory<AbstractClassesPresenter> {
-        ClassesPresenterImpl(
+        ClassesPresenterImpl(get()
         )
     }
+
+    factory<Repository> { RepositoryImpl() }
 }

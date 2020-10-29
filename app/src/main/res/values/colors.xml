@@ -14,6 +14,7 @@
     <color name="clock_tint">#7FFFFFFF</color>
     <color name="classes_card_color">#24252a</color>
     <color name="skype_text_color">#4acffd</color>
+    <color name="deadline_color">#a33e57</color>
 
 
 </resources>

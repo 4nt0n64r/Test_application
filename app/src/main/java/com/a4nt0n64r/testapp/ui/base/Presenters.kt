@@ -17,12 +17,13 @@ interface ActivityPresenter {
 
 @StateStrategyType(SkipStrategy::class)
 interface HomePresenter {
-    fun onDestroy()
+    fun initializeClasses()
+    fun initializeHomework()
 }
 
 @StateStrategyType(SkipStrategy::class)
 interface ClassesPresenter {
-    fun onDestroy()
+    fun initializeClasses()
 }
 
 abstract class AbstractActivityPresenter : MvpPresenter<ActivityView>(), ActivityPresenter

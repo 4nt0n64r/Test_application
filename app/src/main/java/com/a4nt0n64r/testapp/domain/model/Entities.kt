@@ -1,6 +1,6 @@
 package com.a4nt0n64r.testapp.domain.model
 
-interface InterfaceForAdapter
+interface InterfaceForClassesAdapter
 
 
 data class ExtraClass(
@@ -8,18 +8,17 @@ data class ExtraClass(
     val time: String,
     val description: String,
     val teacher: String
-) : InterfaceForAdapter
+) : InterfaceForClassesAdapter
 
 data class Homework(
     val name: String,
     val daysLeft: Int,
     val description: String
-) : InterfaceForAdapter
+) : InterfaceForClassesAdapter
 
 data class StudySubject(
     val name: String,
     val time: String,
-    val description: String,
     val teacher: String,
     val skype: Boolean
-) : InterfaceForAdapter
+) : InterfaceForClassesAdapter

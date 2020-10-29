@@ -1,5 +1,7 @@
 package com.a4nt0n64r.testapp.ui.base
 
+import com.a4nt0n64r.testapp.domain.model.Homework
+import com.a4nt0n64r.testapp.domain.model.StudySubject
 import moxy.MvpView
 import moxy.viewstate.strategy.SingleStateStrategy
 import moxy.viewstate.strategy.SkipStrategy
@@ -10,17 +12,15 @@ import moxy.viewstate.strategy.StateStrategyType
 @StateStrategyType(SingleStateStrategy::class)
 interface ActivityView : MvpView {
     fun showFragment(fragmentId: Int)
-
-    @StateStrategyType(SkipStrategy::class)
-    fun showSnackbar(msg_id: Int)
 }
 
 @StateStrategyType(SingleStateStrategy::class)
 interface HomeFV : MvpView {
-
+    fun showClasses(classesList: List<StudySubject>)
+    fun showHomework(homeworkList: List<Homework>)
 }
 
 @StateStrategyType(SingleStateStrategy::class)
 interface ClassesFV : MvpView {
-
+    fun showClasses(classesList: List<StudySubject>)
 }
