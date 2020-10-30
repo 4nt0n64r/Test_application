@@ -2,17 +2,13 @@ package com.a4nt0n64r.testapp.ui
 
 import android.os.Bundle
 import android.util.Log
-import android.widget.TextView
-import androidx.core.content.ContextCompat
 import com.a4nt0n64r.testapp.R
 import com.a4nt0n64r.testapp.ui.base.AbstractActivityPresenter
 import com.a4nt0n64r.testapp.ui.base.ActivityView
 import com.a4nt0n64r.testapp.ui.fragments.home.ClassesFragment
 import com.a4nt0n64r.testapp.ui.fragments.home.HomeFragment
 import com.google.android.material.bottomnavigation.BottomNavigationView
-import com.google.android.material.snackbar.Snackbar
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_home.*
 import moxy.MvpAppCompatActivity
 import moxy.presenter.InjectPresenter
 import moxy.presenter.ProvidePresenter
@@ -88,10 +84,10 @@ class MainActivity : MvpAppCompatActivity(), ActivityView {
                         showFragment(CLASSES_FRAGMENT)
                     }
                     R.id.navigation_feature1 -> {
-                        Log.d("TODO","Not implemented.")
+                        Log.d("TODO", "Not implemented.")
                     }
                     R.id.navigation_feature2 -> {
-                        Log.d("TODO","Not implemented.")
+                        Log.d("TODO", "Not implemented.")
                     }
                 }
                 return@OnNavigationItemSelectedListener true

@@ -54,6 +54,8 @@ private class ClassElemDelegate :
         }
         viewHolder.name.text = item.name
         viewHolder.time.text = item.time
+//        TODO("поставить лисенер")
+//        viewHolder.skypeButton.setOnClickListener(skypeClickListener)
     }
 
     class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
@@ -61,4 +63,6 @@ private class ClassElemDelegate :
         val skypeButton: LinearLayout = itemView.findViewById(R.id.skype_button)
         val time: TextView = itemView.findViewById(R.id.time_for_subject)
     }
+
+
 }

@@ -9,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.a4nt0n64r.testapp.R
 import com.a4nt0n64r.testapp.domain.model.Homework
 import com.a4nt0n64r.testapp.domain.model.StudySubject
+import com.a4nt0n64r.testapp.ui.MainActivity
 import com.a4nt0n64r.testapp.ui.base.AbstractHomePresenter
 import com.a4nt0n64r.testapp.ui.base.HomeFV
 import kotlinx.android.synthetic.main.fragment_home.*
